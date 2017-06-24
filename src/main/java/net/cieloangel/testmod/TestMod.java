@@ -31,33 +31,20 @@ public class TestMod {
 	public void preInit(FMLPreInitializationEvent event) {
 		System.out.println(Reference.MOD_NAME + " is loading...");
 		ModBlocks.init();
-		ModBlocks.register();
-		
-		//TutorialBiomeRegistry.MainRegistry();
 		
 	}
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		
-		proxy.registerRenders();
-		
-		//GameRegistry.registerWorldGenerator(new TutorialWorldGenerator(), 0);
-		//GameRegistry.registerWorldGenerator(new TutorialStructureGenerator(), 0);
-		//TutorialDimensionRegistry.MainRegistry();
-		
 	}
 	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event)
 	{
-		//WorldType TUTORIAL = new WorldTypeTutorials("tutorial");
-		//WorldType TUTORIALS = new WorldTypeTutorials("tutorials");
+
 	}
 	
-//	@EventHandler
-//	public void serverLoad(FMLServerStartingEvent event) {
-//		event.registerServerCommand(new CommandDimensionTp());
-//	}
+
 
 }
