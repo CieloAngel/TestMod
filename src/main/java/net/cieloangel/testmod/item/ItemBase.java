@@ -1,10 +1,11 @@
 package net.cieloangel.testmod.item;
 
 import net.cieloangel.testmod.TestMod;
+import net.cieloangel.testmod.util.IModelProvider;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public class ItemBase extends Item {
+public class ItemBase extends Item implements IModelProvider {
 	
 	protected String name;
 	
@@ -24,8 +25,9 @@ public class ItemBase extends Item {
 	/**
 	 * 
 	 */
-	public void registerItemModel() {
-		TestMod.proxy.registerItemRenderer(this, 0, name);
+	@Override
+	public void registerItemModel(Item item) {
+		TestMod.proxy.registerItemRenderer(item, 0, name);
 	}
 	
 	/**

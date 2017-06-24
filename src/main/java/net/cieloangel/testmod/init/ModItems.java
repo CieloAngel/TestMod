@@ -1,6 +1,7 @@
 package net.cieloangel.testmod.init;
 
 import net.cieloangel.testmod.item.ItemBase;
+import net.cieloangel.testmod.util.IModelProvider;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -24,8 +25,8 @@ public class ModItems {
 	private static <T extends Item> T register(T item) {
 		GameRegistry.register(item);
 		
-		if (item instanceof ItemBase) {
-			((ItemBase)item).registerItemModel();
+		if (item instanceof IModelProvider) {
+			((IModelProvider)item).registerItemModel(item);
 		}
 		
 		return item;

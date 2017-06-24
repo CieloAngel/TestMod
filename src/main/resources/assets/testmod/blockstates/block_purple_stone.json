@@ -1,0 +1,7 @@
+{
+    "forge_marker": 1,
+    "variants": {
+        "normal": { "model": "testmod:block_purple_stone" },
+        "inventory": { "model": "testmod:block_purple_stone" }        
+    }
+}

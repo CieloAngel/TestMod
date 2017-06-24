@@ -1,19 +1,24 @@
 package net.cieloangel.testmod.init;
 
-import net.cieloangel.testmod.blocks.BlockBase;
-import net.cieloangel.testmod.blocks.BlockStone;
+import net.cieloangel.testmod.blocks.BlockModStone;
+import net.cieloangel.testmod.util.IModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks {
-	
-public static BlockStone purpleCobblestone;
-public static BlockStone greenStone;
+
+	public static BlockModStone purpleStone;
+	public static BlockModStone purpleCobblestone;
+	public static BlockModStone greenStone;
+	public static BlockModStone greenCobblestone;
 	
 	public static void init() {
-		purpleCobblestone = register(new BlockStone("block_purple_cobblestone"));
-		greenStone = register(new BlockStone("block_green_stone"));
+		
+		purpleStone = register(new BlockModStone("block_purple_stone"));
+		purpleCobblestone = register(new BlockModStone("block_purple_cobblestone"));
+		greenStone = register(new BlockModStone("block_green_stone"));
+		greenCobblestone = register(new BlockModStone("block_green_cobblestone"));
 		
 	}
 	
@@ -21,8 +26,8 @@ public static BlockStone greenStone;
 		GameRegistry.register(block);
 		GameRegistry.register(itemBlock);
 		
-		if (block instanceof BlockBase) {
-			((BlockBase)block).registerItemModel(itemBlock);
+		if (block instanceof IModelProvider) {
+			((IModelProvider)block).registerItemModel(itemBlock);
 		}
 		
 		return block;

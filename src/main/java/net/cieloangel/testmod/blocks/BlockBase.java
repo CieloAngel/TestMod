@@ -1,12 +1,13 @@
 package net.cieloangel.testmod.blocks;
 
 import net.cieloangel.testmod.TestMod;
+import net.cieloangel.testmod.util.IModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.ItemBlock;
+import net.minecraft.item.Item;
 
-public class BlockBase extends Block{
+public class BlockBase extends Block implements IModelProvider {
 	
 	protected String name;
 	
@@ -22,7 +23,8 @@ public class BlockBase extends Block{
 	}
 	
 	// Register the block's item model
-	public void registerItemModel(ItemBlock itemBlock) {
+	@Override
+	public void registerItemModel(Item itemBlock) {
 		TestMod.proxy.registerItemRenderer(itemBlock, 0, name);
 	}
 	
