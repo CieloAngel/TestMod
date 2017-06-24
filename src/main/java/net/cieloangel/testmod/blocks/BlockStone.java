@@ -11,6 +11,9 @@ public class BlockStone extends BlockBase {
 	public BlockStone(String name) {
 		
 		super(Material.ROCK, name);
+		
+		setHardness(2f);
+		setResistance(4f);
 	}
 	
 	// Set the color this block displays as on a map

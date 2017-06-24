@@ -2,6 +2,7 @@
 
 # Blocks
 tile.block_purple_cobblestone.name=Purple Cobblestone
+tile.block_green_stone.name=Green Stone
 
 # Tile Entities
 

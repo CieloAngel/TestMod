@@ -9,9 +9,11 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModBlocks {
 	
 public static BlockStone purpleCobblestone;
+public static BlockStone greenStone;
 	
 	public static void init() {
 		purpleCobblestone = register(new BlockStone("block_purple_cobblestone"));
+		greenStone = register(new BlockStone("block_green_stone"));
 		
 	}
 	
