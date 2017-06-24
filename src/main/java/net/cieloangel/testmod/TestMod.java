@@ -3,6 +3,7 @@ package net.cieloangel.testmod;
 import net.cieloangel.testmod.init.ModBlocks;
 import net.cieloangel.testmod.init.ModItems;
 import net.cieloangel.testmod.proxy.CommonProxy;
+import net.cieloangel.testmod.util.ConfigHandler;
 import net.cieloangel.testmod.util.Reference;
 import net.cieloangel.testmod.util.TestModTab;
 import net.cieloangel.testmod.world.ModWorldGen;
@@ -44,6 +45,9 @@ public class TestMod {
 		// The int is the weight of this mod's generator. If issues arise with other
 		// mods interfering with world gen, make this higher
 		GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
+		
+		// Load configuration file
+		ConfigHandler.init(event.getSuggestedConfigurationFile());
 		
 	}
 	

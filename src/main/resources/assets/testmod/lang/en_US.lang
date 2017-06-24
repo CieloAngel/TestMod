@@ -9,3 +9,4 @@ tile.block_green_cobblestone.name=Green Cobblestone
 # Tile Entities
 
 # Other
+itemGroup.testmod=Test Mod
