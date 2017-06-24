@@ -5,6 +5,7 @@ import net.cieloangel.testmod.init.ModItems;
 import net.cieloangel.testmod.proxy.CommonProxy;
 import net.cieloangel.testmod.util.Reference;
 import net.cieloangel.testmod.util.TestModTab;
+import net.cieloangel.testmod.world.ModWorldGen;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -12,6 +13,7 @@ import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 
 // @Mod marks this class as the main mod class so Forge knows to load from here.
@@ -38,6 +40,10 @@ public class TestMod {
 		
 		ModBlocks.init();
 		ModItems.init();
+		
+		// The int is the weight of this mod's generator. If issues arise with other
+		// mods interfering with world gen, make this higher
+		GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
 		
 	}
 	
