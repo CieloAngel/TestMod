@@ -18,6 +18,7 @@ public class ItemBase extends Item {
 		
 		setUnlocalizedName(name);
 		setRegistryName(name);
+		setCreativeTab(TestMod.creativeTab);
 	}
 	
 	/**

@@ -6,12 +6,13 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
 	
+	public static ItemBase tempItem;
 	
 	/**
 	 * Place calls to register items here
 	 */
 	public static void init() {
-		
+		tempItem = register(new ItemBase("item_temp_logo"));
 	}
 	
 	/**

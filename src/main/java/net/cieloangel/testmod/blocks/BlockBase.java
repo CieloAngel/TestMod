@@ -18,6 +18,7 @@ public class BlockBase extends Block{
 		
 		setUnlocalizedName(name);
 		setRegistryName(name);
+		setCreativeTab(TestMod.creativeTab);
 	}
 	
 	// Register the block's item model

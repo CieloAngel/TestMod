@@ -3,7 +3,6 @@ package net.cieloangel.testmod.init;
 import net.cieloangel.testmod.blocks.BlockBase;
 import net.cieloangel.testmod.blocks.BlockStone;
 import net.minecraft.block.Block;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -12,7 +11,7 @@ public class ModBlocks {
 public static BlockStone purpleCobblestone;
 	
 	public static void init() {
-		purpleCobblestone = register(new BlockStone("block_purple_cobblestone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+		purpleCobblestone = register(new BlockStone("block_purple_cobblestone"));
 		
 	}
 	
