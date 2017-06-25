@@ -1,10 +1,12 @@
 # Items
+item.item_crop_bonsai_seed.name=Bonsai Seed
 
 # Blocks
 tile.block_purple_stone.name=Purple Stone
 tile.block_purple_cobblestone.name=Purple Cobblestone
 tile.block_green_stone.name=Green Stone
 tile.block_green_cobblestone.name=Green Cobblestone
+tile.block_crop_bonsai.name=Bonsai
 
 # Tile Entities
 

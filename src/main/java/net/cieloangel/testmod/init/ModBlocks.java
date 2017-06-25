@@ -1,5 +1,6 @@
 package net.cieloangel.testmod.init;
 
+import net.cieloangel.testmod.blocks.BlockCropBonsai;
 import net.cieloangel.testmod.blocks.BlockModStone;
 import net.cieloangel.testmod.util.IModelProvider;
 import net.minecraft.block.Block;
@@ -12,6 +13,7 @@ public class ModBlocks {
 	public static BlockModStone purpleCobblestone;
 	public static BlockModStone greenStone;
 	public static BlockModStone greenCobblestone;
+	public static BlockCropBonsai cropBonsai;
 	
 	public static void init() {
 		
@@ -19,15 +21,20 @@ public class ModBlocks {
 		purpleCobblestone = register(new BlockModStone("block_purple_cobblestone"));
 		greenStone = register(new BlockModStone("block_green_stone"));
 		greenCobblestone = register(new BlockModStone("block_green_cobblestone"));
+		cropBonsai = register(new BlockCropBonsai(), null);
 		
 	}
 	
 	private static <T extends Block> T register(T block, ItemBlock itemBlock) {
-		GameRegistry.register(block);
-		GameRegistry.register(itemBlock);
 		
-		if (block instanceof IModelProvider) {
-			((IModelProvider)block).registerItemModel(itemBlock);
+		GameRegistry.register(block);
+		
+		if (itemBlock != null) {
+			GameRegistry.register(itemBlock);
+		
+			if (block instanceof IModelProvider) {
+				((IModelProvider)block).registerItemModel(itemBlock);
+			}
 		}
 		
 		return block;

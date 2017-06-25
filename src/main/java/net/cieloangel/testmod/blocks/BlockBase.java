@@ -24,8 +24,8 @@ public class BlockBase extends Block implements IModelProvider {
 	
 	// Register the block's item model
 	@Override
-	public void registerItemModel(Item itemBlock) {
-		TestMod.proxy.registerItemRenderer(itemBlock, 0, name);
+	public void registerItemModel(Item item) {
+		TestMod.proxy.registerItemRenderer(item, 0, name);
 	}
 	
 	
