@@ -14,6 +14,7 @@ public class ModBlocks {
 	public static BlockModStone greenStone;
 	public static BlockModStone greenCobblestone;
 	public static BlockCropBonsai cropBonsai;
+	//public static BlockModPortal portalBlock;
 	
 	public static void init() {
 		
@@ -22,6 +23,7 @@ public class ModBlocks {
 		greenStone = register(new BlockModStone("block_green_stone"));
 		greenCobblestone = register(new BlockModStone("block_green_cobblestone"));
 		cropBonsai = register(new BlockCropBonsai(), null);
+		//portalBlock = register(new BlockModPortal("block_portal_plain"), null);
 		
 	}
 	
