@@ -7,6 +7,7 @@ tile.block_purple_cobblestone.name=Purple Cobblestone
 tile.block_green_stone.name=Green Stone
 tile.block_green_cobblestone.name=Green Cobblestone
 tile.block_crop_bonsai.name=Bonsai
+tile.block_hydrangea.name=Hydrangea
 
 # Tile Entities
 

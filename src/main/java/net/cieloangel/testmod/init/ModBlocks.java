@@ -1,6 +1,7 @@
 package net.cieloangel.testmod.init;
 
 import net.cieloangel.testmod.blocks.BlockCropBonsai;
+import net.cieloangel.testmod.blocks.BlockModFlower;
 import net.cieloangel.testmod.blocks.BlockModStone;
 import net.cieloangel.testmod.util.IModelProvider;
 import net.minecraft.block.Block;
@@ -14,6 +15,7 @@ public class ModBlocks {
 	public static BlockModStone greenStone;
 	public static BlockModStone greenCobblestone;
 	public static BlockCropBonsai cropBonsai;
+	public static BlockModFlower hydrangea;
 	//public static BlockModPortal portalBlock;
 	
 	public static void init() {
@@ -23,6 +25,7 @@ public class ModBlocks {
 		greenStone = register(new BlockModStone("block_green_stone"));
 		greenCobblestone = register(new BlockModStone("block_green_cobblestone"));
 		cropBonsai = register(new BlockCropBonsai(), null);
+		hydrangea = register(new BlockModFlower("block_hydrangea"));
 		//portalBlock = register(new BlockModPortal("block_portal_plain"), null);
 		
 	}

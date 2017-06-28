@@ -3,7 +3,6 @@ package net.cieloangel.testmod.blocks;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.creativetab.CreativeTabs;
 
 public class BlockModStone extends BlockBase {
 	
@@ -22,11 +21,11 @@ public class BlockModStone extends BlockBase {
 		return MapColor.PURPLE;
 	}
 	
-	@Override
-	public BlockModStone setCreativeTab(CreativeTabs tab) {
-		
-		super.setCreativeTab(tab);
-		return this;
-	}
+//	@Override
+//	public BlockModStone setCreativeTab(CreativeTabs tab) {
+//		
+//		super.setCreativeTab(tab);
+//		return this;
+//	}
 
 }
