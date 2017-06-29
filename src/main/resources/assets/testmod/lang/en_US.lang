@@ -1,13 +1,17 @@
 # Items
 item.item_crop_bonsai_seed.name=Bonsai Seed
+item.item_berry.name=Berry
+item.item_ingot_leprunese.name=Leprunese Ingot
 
 # Blocks
 tile.block_purple_stone.name=Purple Stone
 tile.block_purple_cobblestone.name=Purple Cobblestone
 tile.block_green_stone.name=Green Stone
 tile.block_green_cobblestone.name=Green Cobblestone
+tile.block_ore_leprunese.name=Leprunese Ore
 tile.block_crop_bonsai.name=Bonsai
-tile.block_hydrangea.name=Hydrangea
+tile.block_flower_hydrangea.name=Hydrangea
+tile.block_flower_iris.name=Iris
 
 # Tile Entities
 

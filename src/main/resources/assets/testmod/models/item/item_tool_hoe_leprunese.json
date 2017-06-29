@@ -1,0 +1,6 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "testmod:items/item_tool_hoe_leprunese"
+	}
+}

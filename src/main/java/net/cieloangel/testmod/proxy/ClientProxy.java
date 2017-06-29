@@ -11,6 +11,9 @@ public class ClientProxy extends CommonProxy {
 		// intentionally left blank
 	}
 	
+	/**
+	 * Tells Minecraft which item model to use for the item
+	 */
 	@Override
 	public void registerItemRenderer(Item item, int meta, String id) {
 		ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(Reference.MOD_ID + ":" + id, "inventory"));

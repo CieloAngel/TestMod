@@ -1,24 +1,25 @@
 package net.cieloangel.testmod.blocks;
 
+import net.cieloangel.testmod.util.ItemModelProvider;
 import net.cieloangel.testmod.util.ItemOreDict;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraftforge.oredict.OreDictionary;
 
-public class BlockModStone extends BlockBase implements ItemOreDict {
+public class BlockModOre extends BlockBase implements ItemModelProvider, ItemOreDict {
 	
 	private String oreDictName;
 	
 	// Constructor
-	public BlockModStone(String name, String oreDictName) {
+	public BlockModOre(String name, String oreDictName) {
 		
-		super(Material.ROCK, name);
+		super(Material.IRON, name);
 		
 		this.oreDictName = oreDictName;
 		
-		setHardness(1.5f);
-		setResistance(3f);
+		setHardness(3f);
+		setResistance(5f);
 	}
 	
 	@Override
@@ -31,12 +32,5 @@ public class BlockModStone extends BlockBase implements ItemOreDict {
 		
 		return MapColor.PURPLE;
 	}
-	
-//	@Override
-//	public BlockModStone setCreativeTab(CreativeTabs tab) {
-//		
-//		super.setCreativeTab(tab);
-//		return this;
-//	}
 
 }

@@ -1,0 +1,7 @@
+{
+    "forge_marker": 1,
+    "variants": {
+        "normal": { "model": "testmod:block_ore_leprunese" },
+        "inventory": { "model": "testmod:block_ore_leprunese" }        
+    }
+}

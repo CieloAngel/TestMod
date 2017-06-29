@@ -23,7 +23,7 @@ public class BlockCropBonsai extends BlockCrops {
 	@Override
 	protected Item getCrop() {
 		
-		return ModItems.tempItem;
+		return ModItems.berry;
 	}
 
 }

@@ -2,12 +2,12 @@ package net.cieloangel.testmod.item;
 
 import net.cieloangel.testmod.TestMod;
 import net.cieloangel.testmod.init.ModBlocks;
-import net.cieloangel.testmod.util.IModelProvider;
+import net.cieloangel.testmod.util.ItemModelProvider;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemSeeds;
 
-public class ItemBonsaiSeed extends ItemSeeds implements IModelProvider {
+public class ItemBonsaiSeed extends ItemSeeds implements ItemModelProvider {
 	
 	public ItemBonsaiSeed() {
 		

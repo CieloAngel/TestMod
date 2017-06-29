@@ -12,7 +12,9 @@ import net.cieloangel.testmod.util.ConfigHandler;
 import net.cieloangel.testmod.util.Reference;
 import net.cieloangel.testmod.util.TestModTab;
 import net.cieloangel.testmod.world.ModOverworldGen;
+import net.minecraft.item.Item;
 import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -27,6 +29,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class TestMod {
 	
+	public static final Item.ToolMaterial lepruneseToolMaterial = EnumHelper.addToolMaterial("LEPRUNESE", 2, 500, 6, 2, 14);	
 	public static final TestModTab creativeTab = new TestModTab();
 	public static Configuration config;
 	

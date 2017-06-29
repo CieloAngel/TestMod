@@ -1,11 +1,11 @@
 package net.cieloangel.testmod.item;
 
 import net.cieloangel.testmod.TestMod;
-import net.cieloangel.testmod.util.IModelProvider;
+import net.cieloangel.testmod.util.ItemModelProvider;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public class ItemBase extends Item implements IModelProvider {
+public class ItemBase extends Item implements ItemModelProvider {
 	
 	protected String name;
 	

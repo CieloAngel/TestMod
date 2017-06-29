@@ -42,7 +42,7 @@ public class ModOverworldGen implements IWorldGenerator {
 		// the minimum and maximum Y position to generate the stone at (levels 3 to 256 in this case)
 		// the size of the "vein" to generate (a random number from 4 to 7)
 		// the number of times per chunk to generate (chance)
-		generateStone(ModBlocks.purpleCobblestone.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 3, 256, 4 + random.nextInt(4), 6);
+		generateStone(ModBlocks.oreLeprunese.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 3, 256, 8 + random.nextInt(4), 6);
 		
 	}
 	
